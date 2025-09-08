@@ -1,0 +1,36 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       Microglial_Count   R-squared:                       0.613
+Model:                            OLS   Adj. R-squared:                  0.594
+Method:                 Least Squares   F-statistic:                     33.22
+Date:                Mon, 08 Sep 2025   Prob (F-statistic):           1.01e-05
+Time:                        00:41:56   Log-Likelihood:                -196.73
+No. Observations:                  23   AIC:                             397.5
+Df Residuals:                      21   BIC:                             399.7
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept   4581.4297    421.235     10.876      0.000    3705.423    5457.436
+Dose          -3.5966      0.624     -5.763      0.000      -4.894      -2.299
+==============================================================================
+Omnibus:                        0.381   Durbin-Watson:                   2.376
+Prob(Omnibus):                  0.827   Jarque-Bera (JB):                0.017
+Skew:                           0.066   Prob(JB):                        0.991
+Kurtosis:                       3.020   Cond. No.                     1.04e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.04e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+=== Robust SE (HC3) for OLS dose effect ===
+Slope (per mg/kg): -3.597
+HC3 SE=0.5718  95% CI [-4.786, -2.407]  p=3.082e-06
+
+Slope (per mg/kg): -3.597  95% CI [-4.894, -2.299]  p=1.013e-05
+AIC linear=397.46  |  AIC quadratic=397.61
+Linear looks sufficient (ΔAIC ≤ 2).
+Spearman rho=-0.853, p=2.275e-07
